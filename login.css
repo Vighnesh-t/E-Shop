@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./Images/bg2.jpg");
+    background-size: cover;
+}
+form{
+    width: 100%;
+    height: 80%;
+    margin-top: 15rem;
+    
+}
+.content{
+    width: 25%;
+    height: 60%;
+    margin-left: 35rem;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+input{
+    width: 83%;
+    height: 10%;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    padding: 0.7rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 10px ;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border: none;
+    border: 1px solid #fff ;
+}
+
+.login{
+    display: block;
+    width: 28%;
+    height: 11%;
+    margin-top: 4rem;
+    margin-left: 11rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: lawngreen;
+}
+.signup{
+    display: block;
+    width: 54%;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: lawngreen;
+    text-decoration: none;
+}
+
+.show{
+    position: relative;
+}
+h3{
+    color: #fff;
+    position: absolute;
+    top: 58%;
+    right: 10%;
+}
+h2{
+    margin-top: 1rem;
+    margin-left: 11rem;
+    color: white;
+}
+p{
+    
+    margin-top: 2rem;
+    margin-left: 11.5rem;
+    color: blue;
+}
+h1{
+    position: absolute;
+    top: 12%;
+    font-size: 3rem;
+    color: white;
+}
+span{
+    color: red;
+    margin-left: 2.5rem;
+}
+.res{
+    margin-left: 10.5rem;
+}
+button:active{
+    background-color: azure;
+}

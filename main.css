@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: peru;
+    padding: 0rem,2rem;
+    position: sticky;
+    top: 0%;
+}
+#left > h2{
+
+font-size: 2rem;
+}
+#center{
+
+}
+main{
+    background-color: peru;
+}
+#center > ul{
+    list-style-type: none;
+    display: flex;
+}
+#center > ul > li > a{
+    text-decoration: none;
+    color: rgb(62, 40, 40);
+    padding: 2rem;
+    display: block;
+    font-size:x-large;
+}
+#center > ul > li > a:hover{
+    color: skyblue;
+}
+#right{
+}
+#right > span{
+    color: black;
+    font-size:large;
+}
+
+#right button{
+    margin-left: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    font-size:large;
+}
+
+
+#right button:active{
+    background-color: black;
+    color: white;
+}
+
+/* 3 column 25% width
+to divide equally to corner */
+.design{
+    display: grid;
+    grid-template-columns: repeat(3,28%);
+    justify-content: space-between;
+    
+}
+.design > div{
+    background-color:skyblue;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+.design > div > img{
+    width: 100%;
+    height: 23rem;
+    border-radius: 20px;
+}
+.design > div >h3{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.design > div > h2{
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.23rem;
+}
+.design > div > button{
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1.23rem;
+}
+.design > div > button:active{
+    background-color: red;
+    color: black;
+}
+
+#search{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+#search div{
+    
+}
+
+#search>div> input{
+    height: 2rem;
+    width: 10rem;
+    font-size: large;
+    
+}
+
+#search >div> button{
+    margin-bottom: 1rem;
+    padding: 0.9rem;
+    border: none;
+    background-color: rgb(red, green, blue);
+    border-radius: 5px;
+    color: red;
+    margin-left: 1rem;
+}
+
+#search > button:active{
+    background-color: sandybrown;
+    color: black;
+}
+
+/* cart container */
+
+#cartCont{
+    position: relative;
+}
+.fa-cart-shopping{
+    color: white;
+    font-size: x-large;
+}
+#count{
+    color: red;
+    font-size: 1rem;
+    position: absolute;
+    top: -85%;
+    right: -44%;
+}

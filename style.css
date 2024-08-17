@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+        
+        background-image: url("./Images/digital-marketing-E-commerce-platform-trade-online-business--shut.jpg");
+        background-size: cover;
+       
+        
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+form{
+    width: 42%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+     /* opacity: 80%; */
+     border: 3px solid black;
+     justify-content: center;
+    
+}
+
+input,label,button{
+    display: block;
+    margin-top: 1rem;
+    justify-content: center;
+    /* width: 70%; */
+    font-size: 22px;
+    color: black;
+    margin-left: 2.5rem;
+}
+
+input{
+    padding: 0.2rem 0.3rem;
+    border-radius: 5px;
+    width: 80%;
+    color: black;
+}
+
+button{
+    height: 3.5rem;
+    margin-top: 2rem;
+    margin-left: 8.5rem;
+    background-color: #1E90FF;
+    border-radius: 10px;
+    border: none;
+    padding: 0.5 rem 0rem;
+    width: 40%;
+    
+}
+
+button:active{
+    background-color: darkgrey;
+}
+
+span{
+    color: red;
+}
