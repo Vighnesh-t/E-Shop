@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">
 </head>
-
 <body>
-    <section>
-        <h1>USER LOGIN</h1>
-        <form action="./main.html">
-            <div class="content">
-                <div class="usr">
-                    <input type="text" placeholder="enter email or phone number">
-                </div>
-                <span></span>
+    <section class="container">
+        <aside class="left">
+            <div class="left-content">
+                <h1>E-Shop</h1>
+                <p>Shop in a Better way <br>with the people in your life.</p>
+            </div>
+        </aside>
+        <aside class="right">
+            <form action="./main.html">
+                <input class="ip" type="text" name="username" placeholder="Email address or phone number"><br>
+                <span class="error"></span>
 
-                <div class="show">
-                    <input type="password" placeholder="enter password">
+                <div id="show">
+                    <input class="ip" type="password" name="password" id="password" placeholder="Password" ><br>
                     <h3>show</h3>
                 </div>
-                <span></span>
-                <button class="login">Log in</button>
-                <span class="res"></span>
-                <p>forgotten password?</p> <br>
-                <pre>------------------------------------------------------------------------</pre>
-                <h2>
-                    <button class="signup" onclick="navigateToSignup()">SignUp</button>
-                  </h2>
-            </div>
+                
+                <span class="error"></span>
+
+                <button class="butt" type="submit">Login</button>
+                <span class="error"></span>
+                <span>Forgotten password?</span>
+                <button class="acc" type="button" onclick="navigateToSignup()">Create new account</button>
+            </form>
+            <span class="cc">Create a Page for a celebrity, brand or business.</span>
+        </aside>
     </section>
-    </form>
     <script src="./login.js"></script>
 </body>
-
 </html>
