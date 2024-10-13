@@ -1,4 +1,5 @@
-*{
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,6 +8,8 @@
 html, body {
     margin-top: 1rem;
     height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
 body {
@@ -14,68 +17,87 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Ensures the background image stays in place when scrolling */
+    background-attachment: fixed; /* Fixed background image */
 }
 
+/* Main Section Layout */
 section {
     display: flex;
     width: 100%;
-    height: 100vh; /* Makes the section full height */
+    height: 100vh; /* Full viewport height */
 }
 
-.left {
-    width: 30%; /* Adjust as needed for form size */
-     /* Add some padding for spacing */
+.left, .right {
+    width: 35%;
     display: flex;
-    align-items: center; /* Center form vertically */
+    justify-content: center;
+    align-items: center; /* Center content vertically */
 }
 
 .mid {
-    width: 40%; /* Adjust as needed for image size */
-    /* background-image: url("./Images/1600w-hxc1-hr_SQA.webp"); */
+    width: 43%; /* Adjust image section width */
     background-size: cover;
     background-position: center;
 }
-.right{
-    width: 30%;
-}
 
+/* Headings */
 h1 {
     text-align: center;
     margin-bottom: 2rem;
-    font-size:x-large;
+    font-size: 2rem;
+    color: #1E90FF;
 }
 
+/* Form Styling */
 form {
-    width: 100%; /* Use full width available in the left section */
+    width: 100%;
+    max-width: 500px; /* Limit form width */
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
     border-radius: 10px;
-    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-input, label, button {
-    display: block;
-    margin-top: 0.3rem;
-    font-size: 22px;
-    color: black;
-    width: 70%; /* Ensure inputs and button align properly */
-    margin-left: 0; /* Align elements to the start */
+label {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    width: 70%;
+    text-align: left; /* Align labels to the left */
 }
 
 input {
-    padding: 0.2rem 0.3rem;
+    width: 70%;
+    padding: 0.6rem 1rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
     border-radius: 9px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #1E90FF; /* Highlight border on focus */
 }
 
 button {
-    height: 3rem;
-    margin-top: 0.5rem;
+    width: 50%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
     background-color: #1E90FF;
-    border-radius: 10px;
+    color: white;
     border: none;
-    width: 50%; /* Make button full width of the form */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #187bcd;
 }
 
 button:active {
@@ -84,31 +106,28 @@ button:active {
 
 span {
     color: red;
+    font-size: 0.9rem;
 }
 
-/* Default styles (Desktop) */
-/* Tablet: Adjust the layout for medium-sized screens */
+/* Responsive Design */
+/* Tablet and Medium Screens */
 @media (max-width: 1024px) {
-    .left {
+    .left, .right {
         width: 50%;
         padding: 1.5rem;
     }
 
-    .right {
-        width: 50%;
-    }
-
     form {
-        padding: 0.5rem;
+        padding: 1rem;
     }
 
     input, label, button {
-        font-size: 20px;
+        font-size: 1rem;
         width: 90%;
     }
 }
 
-/* Mobile: Stack form on top of the image */
+/* Mobile Layout (Stacked Form and Image) */
 @media (max-width: 768px) {
     section {
         flex-direction: column;
@@ -119,7 +138,7 @@ span {
     }
 
     .right {
-        height: 300px; /* Adjust height for the image on smaller screens */
+        height: 300px; /* Image height adjustment */
     }
 
     form {
@@ -132,14 +151,14 @@ span {
     }
 }
 
-/* Small Mobile: Further adjust for very small screens */
+/* Small Mobile Screens */
 @media (max-width: 480px) {
     form {
-        padding: 0.5rem;
+        padding: 0.75rem;
     }
 
     input, label, button {
-        font-size: 18px;
+        font-size: 0.9rem;
         width: 95%;
     }
 

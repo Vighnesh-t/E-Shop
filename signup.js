@@ -28,7 +28,6 @@ if(dataFromStorage){ // it will check it is null or not then it will get added a
 
 form.addEventListener("submit", (e) => {
 
-
     
     //* '^' to start , '$'- to end , to trigger regular expression -'/ /', user allowed to input -'[]'
     //* '{1,17}'-user length
