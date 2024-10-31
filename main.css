@@ -1,20 +1,21 @@
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Arial", sans-serif;
 }
+
 #logo {
   height: 1.7rem;
   background: rgba(0, 0, 0, 0.5);
 }
-/* Navigation Bar */
+
 nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: color(srgb 0.8091 0.7061 1);
+  background-color: #bfc7ff;
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
@@ -25,6 +26,8 @@ nav {
 #left > h2 {
   font-size: 2rem;
   color: #3e2828;
+  display: flex;
+  align-items: center;
 }
 
 #center {
@@ -35,6 +38,7 @@ nav {
   list-style: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #center > ul > li {
@@ -198,4 +202,41 @@ main {
   border-radius: 50%;
   padding: 0.25rem 0.5rem;
   font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  #center > ul > li > a {
+    font-size: 1rem;
+  }
+
+  .design {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #search > input {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  #center > ul {
+    flex-direction: column;
+  }
+
+  #right {
+    flex-direction: column;
+  }
+
+  .design {
+    grid-template-columns: 1fr;
+  }
+
+  #search > input {
+    width: 100%;
+  }
 }
