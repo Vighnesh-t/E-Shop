@@ -1,199 +1,201 @@
 /* Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
 }
-
+#logo {
+  height: 1.7rem;
+  background: rgba(0, 0, 0, 0.5);
+}
 /* Navigation Bar */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #BCB1E4;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: color(srgb 0.8091 0.7061 1);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #left > h2 {
-    font-size: 2rem;
-    color: #3E2828;
+  font-size: 2rem;
+  color: #3e2828;
 }
 
 #center {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 #center > ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 #center > ul > li {
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 #center > ul > li > a {
-    text-decoration: none;
-    color: #3E2828;
-    padding: 1rem;
-    font-size: 1.25rem;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #3e2828;
+  padding: 1rem;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
 }
 
 #center > ul > li > a:hover {
-    color: skyblue;
+  color: #dd7878;
 }
 
 /* Right Section of Navigation */
 #right {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #right > span {
-    color: black;
-    font-size: large;
+  color: black;
+  font-size: large;
 }
 
 #right button {
-    margin-left: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: white;
-    font-size: large;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  font-size: large;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #right button:active {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 /* Main Section */
 main {
-    background-color: #BCB1E4;
-    padding: 2rem;
+  background-color: #bcb1e4;
+  padding: 2rem;
 }
 
 /* Design Section (3 Columns) */
 .design {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
 .design > div {
-    background-color: #DD7878;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  background-color: #dd7878;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .design > div:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .design > div > img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
 }
 
 .design > div > h3 {
-    text-align: center;
-    margin: 1rem 0;
-    font-size: 1.5rem;
-    color: white;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .design > div > h2 {
-    padding-left: 1rem;
-    font-size: 1.25rem;
-    color: #fff;
+  padding-left: 1rem;
+  font-size: 1.25rem;
+  color: #fff;
 }
 
 .design > div > button {
-    width: 100%;
-    padding: 0.75rem;
-    border: none;
-    border-radius: 8px;
-    background-color: #FFF;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .design > div > button:active {
-    background-color: red;
-    color: black;
+  background-color: red;
+  color: black;
 }
 
 /* Search Section */
 #search {
-    text-align: center;
-    padding: 1rem;
-    background-color: #E0C183;
-    margin: 2rem 0;
+  text-align: center;
+  padding: 1rem;
+  background-color: #e0c183;
 }
 
 #search > input {
-    margin-top: 1rem;
-    height: 2.5rem;
-    width: 15rem;
-    font-size: large;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    padding: 0 1rem;
+  margin-top: 1rem;
+  height: 2.5rem;
+  width: 15rem;
+  font-size: large;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 0 1rem;
 }
 
 #search > button {
-    margin-left: 1rem;
-    padding: 0.75rem 1rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  margin-left: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #search > button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 #search > button:active {
-    background-color: sandybrown;
-    color: black;
+  background-color: sandybrown;
+  color: black;
 }
 
 /* Cart Container */
 #cartCont {
-    position: relative;
+  position: relative;
 }
 
 .fa-cart-shopping {
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 #count {
-    color: red;
-    font-size: 1rem;
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background-color: white;
-    border-radius: 50%;
-    padding: 0.25rem 0.5rem;
-    font-weight: bold;
+  color: red;
+  font-size: 1rem;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
 }
